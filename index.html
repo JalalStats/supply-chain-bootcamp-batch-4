@@ -1,0 +1,168 @@
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalal.Stats</title>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f7fbff;
+        }
+
+        header {
+            padding: 100px 20px;
+            text-align: center;
+            background: white;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #444;
+            max-width: 700px;
+            margin: 0 auto 16px;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .cta a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .primary-btn {
+            background: #219edb;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background: #197fb3;
+        }
+
+        .secondary-btn {
+            border: 1px solid #219edb;
+            color: #219edb;
+        }
+
+        .secondary-btn:hover {
+            background: #219edb;
+            color: white;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 700px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 14px;
+            color: #666;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Data is everywhere.<br>Insight is rare.</h1>
+    <p>Jalal.Stats mengubah data menjadi insight yang relevan untuk memahami keputusan dan perilaku.</p>
+
+    <div class="cta">
+        <a href="#insights" class="primary-btn">Explore Insights</a>
+        <a href="#projects" class="secondary-btn">View Work</a>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About</h2>
+    <p>Ketertarikan terhadap data berawal dari sebuah pertanyaan sederhana: mengapa keputusan sering kali tidak sejalan dengan informasi yang tersedia?</p>
+
+    <p>Data bukan hanya alat analisis, tetapi cara untuk memahami pola, perilaku, dan dinamika di balik sebuah keputusan.</p>
+
+    <p>Namun dalam praktiknya, banyak data berhenti pada visualisasi—rapi secara tampilan, tetapi tidak selalu memberikan arah.</p>
+
+    <p>Jalal.Stats dibangun dengan pendekatan berbeda: menempatkan insight sebagai inti, bukan sekadar output.</p>
+
+    <p>Saat ini berfokus pada pengembangan Jalal.Stats sebagai ruang untuk mengolah data menjadi perspektif yang lebih bermakna.</p>
+</section>
+
+<section id="insights">
+    <h2>Insights</h2>
+    <p>Understanding beyond numbers.</p>
+
+    <div class="card">
+        <p><strong>Why Most Dashboards Fail</strong></p>
+        <p>Banyak dashboard terlihat informatif, tetapi tidak menjawab pertanyaan utama: apa yang harus dilakukan selanjutnya?</p>
+        <p>Insight seharusnya mengarah pada keputusan, bukan hanya visualisasi.</p>
+    </div>
+
+    <div class="card">
+        <p><strong>Data Does Not Equal Understanding</strong></p>
+        <p>Memiliki data tidak berarti memahami situasi. Tanpa interpretasi yang tepat, data hanya menjadi angka tanpa arah.</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <p>Selected work and analytical approach.</p>
+
+    <div class="card">
+        <p><strong>Customer Retention Analysis</strong></p>
+        <p><strong>Problem:</strong> Tingginya churn tanpa kejelasan penyebab utama</p>
+        <p><strong>Approach:</strong> Analisis cohort dan behavior tracking</p>
+        <p><strong>Insight:</strong> Penurunan engagement terjadi di minggu kedua</p>
+        <p><strong>Impact:</strong> Membuka peluang intervensi lebih awal</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Untuk diskusi, kolaborasi, atau pertanyaan lebih lanjut, silakan menghubungi melalui:</p>
+
+    <p>Email: your@email.com</p>
+    <p>LinkedIn: your-linkedin.com</p>
+
+    <p>Open for meaningful conversations and potential collaborations.</p>
+</section>
+
+<footer>
+    <p>Built with clarity and intention.</p>
+</footer>
+
+</body>
+</html>
+"""
+
+file_path = "/mnt/data/index.html"
+with open(file_path, "w") as f:
+    f.write(html_content)
+
+file_path
